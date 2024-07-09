@@ -1,3 +1,50 @@
+This package is an fork of syncfusion_flutter_datepicker with an motive to add customizable footer okay and cancel button this package has been forked and you can use the additional functionalities by:
+
+```dart
+ SfDateRangePicker(
+                
+                cancelTextStyle: textTheme.bodyMedium
+                    ?.copyWith(color: const Color(0xff19181A)),
+               
+  		okTextStyle: textTheme.bodyMedium?.copyWith(
+                  color: Colors.white,
+                ),
+                cancelStyle: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all<Color>(
+                    AppColors.bodyTextDark,
+                  ),
+                  padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
+                      const EdgeInsets.symmetric(
+                          vertical: 16.0, horizontal: 16.0)),
+                  shape: WidgetStateProperty.all<OutlinedBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0),
+                    ),
+                  ),
+                ),
+
+                okStyle: ButtonStyle(
+                  backgroundColor:
+                      WidgetStateProperty.all<Color>(AppColors.primaryGreen700),
+                  padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
+                      const EdgeInsets.symmetric(
+                          vertical: 16.0, horizontal: 16.0)),
+                  shape: WidgetStateProperty.all<OutlinedBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0),
+                    ),
+                  ),
+                ),
+                showCancelAndOkButtonOnly: true,
+               
+              ),
+```
+
+The above 5 parameters has been added to the pacakage to gain the above descibed feature which returns an result of:
+<img width="398" alt="image" src="https://github.com/webpoint-solutions-llc/syncfusion_flutter_datepicker/assets/33796281/42774cab-bd86-4f14-b45b-bbc5287d92d4">
+
+
+
 ![syncfusion_flutter_datepicker_banner](https://cdn.syncfusion.com/content/images/FTControl/Flutter/datepicker.jpg)
 
 # Flutter Date Range Picker
